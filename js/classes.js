@@ -180,7 +180,7 @@ function Projectiles()
 		
 			if (!isRemoved)
 			{
-				if (_Projectiles[i].CurrentX>_GameState.CanvasWidth || _Projectiles[i].CurrentY>_GameState.CanvasHeight || _Projectiles[i].CurrentX + _Projectiles[i].ShotX <0 || _Projectiles[i].CurrentY + _Projectiles[i].ShotY <0)
+				if (_Projectiles[i].CurrentX>gameState.CanvasWidth || _Projectiles[i].CurrentY>gameState.CanvasHeight || _Projectiles[i].CurrentX + _Projectiles[i].ShotX <0 || _Projectiles[i].CurrentY + _Projectiles[i].ShotY <0)
 				{
 					_Projectiles.splice(i,1);
 				}
