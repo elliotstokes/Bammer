@@ -57,7 +57,7 @@
 			_GameState.update();
 			_GameState.CurrentProjectiles.render(context, _Ship, _GameState);
 
-			if (_GameState.Enemies.count() < 2 && Math.random() < 0.01) {
+			if (_GameState.Enemies.count() < _GameState.maxEnemies && Math.random() < _GameState.enemySpawnProbability) {
 				var enemy = new Enemy(Math.floor(Math.random() * _GameState.CanvasWidth), Math.floor(Math.random() * _GameState.CanvasHeight));
 				_GameState.Enemies.add(enemy);
 			}

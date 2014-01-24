@@ -14,6 +14,8 @@ function GameState(context, preloader)
 	this.ShotCount=0;
 	this.Started = false;
 	this.DamageLimit = 10;
+	this.maxEnemies = 3;
+	this.enemySpawnProbability = 0.01;
 	this.CurrentProjectiles = new Projectiles();
 	this.Enemies = new Enemies(_Context,this);
 	
